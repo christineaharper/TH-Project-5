@@ -1,0 +1,100 @@
+/* ============================================= */
+/*              Global Styles                    */
+/* ============================================= */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 2rem 1.5rem;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.lgimg {
+  padding: 0 2rem 2rem;
+}
+
+
+/* ============================================= */
+/*                  Layout                       */
+/* ============================================= */
+
+.outer-wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.inner-wrap {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+@media only screen and (min-width:768px) {
+  .inner-wrap {
+    max-width: 1150px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+  }
+
+
+/* ============================================= */
+/*                  Search Bar                   */
+/* ============================================= */
+
+#searchBar {
+  display: block;
+  margin: 3rem auto 2rem;
+  padding: 1rem 1.5rem;
+  border-radius: .5rem;
+  width: 200px;
+  position: relative;
+}
+
+/* #searchBar:after {
+  content: '&#x1F50D';
+  position: absolute;
+
+} */
+  
+@media only screen and (min-width: 768px) {
+  #searchBar {
+    width: 40%;
+    margin: 5rem auto 5rem;
+    }
+}
+
+
+/* ============================================= */
+/*              Fancybox Custom                  */
+/* ============================================= */
+
+
+div.fancybox-caption__body {
+  position: relative;
+  bottom: 8rem;
+}
+
+
+@media only screen and (min-width: 1200px) {
+  
+  button.fancybox-button.fancybox-button--arrow_right {
+    right: 20rem;
+  }
+
+  button.fancybox-button.fancybox-button--arrow_left {
+    left: 20rem;
+  }
+}
